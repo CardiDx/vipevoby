@@ -1,0 +1,92 @@
+.c-footer {
+  padding: 8rem 0;
+  color: $color-text;
+  background-color: $color-backgorund;
+
+  @include bp-md {
+    padding: 8rem 0;
+  }
+
+  @include bp-sm {
+    padding: 4rem 0;
+  }
+}
+
+.c-footer__inner {
+  @include section-inner--alt;
+}
+
+.c-footer__form-inner {
+  max-width: 70.5rem;
+
+  @include bp-xl {
+    max-width: 60rem;
+  }
+}
+
+.c-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 27rem;
+  padding-bottom: 9rem;
+
+  @include bp-lg {
+    padding-top: 10rem;
+    padding-bottom: 0;
+  }
+
+  @include bp-sm {
+    padding-top: 4rem;
+    padding-bottom: 0;
+  }
+}
+
+.c-footer__contacts-links {
+  margin: -0.8rem 0;
+}
+
+.c-footer__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include bp-lg {
+    flex-direction: column;
+  }
+}
+
+.c-footer__line {
+  display: flex;
+  align-items: center;
+  color: $color-text;
+  padding: $indent-s 0;
+}
+
+.c-footer__line-icon {
+  flex-shrink: 0;
+  margin-right: $indent-s;
+}
+
+.c-footer__line-link {
+  cursor: pointer;
+  transition: color $motion-m;
+
+  @include link-events {
+    color: $color-text;
+  }
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.c-footer__social-wrapper {
+  @include bp-lg {
+    margin-top: 4rem;
+  }
+}
+
+.c-footer__social-wrapper-title {
+  margin-bottom: $indent-s;
+}

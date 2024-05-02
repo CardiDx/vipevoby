@@ -1,0 +1,21 @@
+.faq {
+  padding: 9rem 0;
+
+  @include bp-md {
+    padding: 8rem 0;
+  }
+
+  @include bp-sm {
+    padding: 4rem 0;
+  }
+}
+
+.c-faq__inner {
+  @include section-inner;
+  max-width: 95rem;
+  margin: 0 auto;
+}
+
+.c-faq__title {
+  text-align: center;
+}

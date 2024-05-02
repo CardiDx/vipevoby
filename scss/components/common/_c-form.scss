@@ -1,0 +1,50 @@
+.c-form__fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -1.6rem;
+  margin-right: -1.6rem;
+
+  @include bp-sm {
+    flex-direction: column;
+  }
+}
+
+.c-form__field {
+  flex: 0 0 auto;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+
+  &:first-child {
+    @include bp-sm {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &--50 {
+    width: 50%;
+
+    @include bp-sm {
+      width: 100%;
+    }
+  }
+
+  &--100 {
+    width: 100%;
+  }
+}
+
+.c-form__message {
+  height: 21.1rem;
+  margin: 3rem 0;
+
+  @include bp-sm {
+    margin: 1.6rem 0;
+  }
+}
+
+.c-form__button {
+  max-width: 28rem;
+  width: 100%;
+  justify-content: center;
+}

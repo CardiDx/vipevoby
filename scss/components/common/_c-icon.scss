@@ -1,0 +1,90 @@
+.c-icon {
+  display: block;
+  width: $ui-size-s;
+  height: $ui-size-s;
+  background-color: $color-text-secondary;
+  mask: no-repeat center center;
+  -webkit-mask: no-repeat center center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  transition: background-color $motion-m;
+
+  &--large {
+    width: $ui-size-m;
+    height: $ui-size-m;
+  }
+
+  // variants
+
+  &--whatsapp {
+    mask-image: url(/img/icons/whatsapp.svg);
+    -webkit-mask-image: url(/img/icons/whatsapp.svg);
+
+    &:hover {
+      background-color: #25d366;
+    }
+  }
+
+  &--telegram {
+    mask-image: url(/img/icons/telegram.svg);
+    -webkit-mask-image: url(/img/icons/telegram.svg);
+
+    &:hover {
+      background-color: #0088cc;
+    }
+  }
+
+  &--phone-line {
+    mask-image: url(/img/icons/phone-line.svg);
+    -webkit-mask-image: url(/img/icons/phone-line.svg);
+  }
+
+  &--mail-line {
+    mask-image: url(/img/icons/mail-line.svg);
+    -webkit-mask-image: url(/img/icons/mail-line.svg);
+  }
+
+  &--map-pin-line {
+    mask-image: url(/img/icons/map-pin-line.svg);
+    -webkit-mask-image: url(/img/icons/map-pin-line.svg);
+  }
+
+  &--arrow-up {
+    mask-image: url(/img/icons/arrow-up.svg);
+    -webkit-mask-image: url(/img/icons/arrow-up.svg);
+  }
+
+  &--time {
+    mask-image: url(/img/icons/time.svg);
+    -webkit-mask-image: url(/img/icons/time.svg);
+  }
+
+  &--save {
+    mask-image: url(/img/icons/save.svg);
+    -webkit-mask-image: url(/img/icons/save.svg);
+  }
+
+  &--opacity {
+    mask-image: url(/img/icons/opacity.svg);
+    -webkit-mask-image: url(/img/icons/opacity.svg);
+  }
+
+  &--long-arrow {
+    mask-image: url(/img/icons/long-arrow.svg);
+    -webkit-mask-image: url(/img/icons/long-arrow.svg);
+  }
+
+  &--star {
+    mask-image: url(/img/icons/star.svg);
+    -webkit-mask-image: url(/img/icons/star.svg);
+  }
+
+  &--dropdown-arrow {
+    mask-image: url(/img/icons/dropdown-arrow.svg);
+    -webkit-mask-image: url(/img/icons/dropdown-arrow.svg);
+  }
+}
+
+.c-icon--rotate {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,21 @@
+.c-heading {
+  margin-bottom: 6rem;
+
+  @include bp-sm {
+    margin-bottom: 4rem;
+  }
+}
+
+.c-heading__title {
+  @include type-headline-2;
+}
+
+.c-heading__description {
+  margin-top: 2rem;
+  @include type-body-1;
+  color: $color-text-secondary;
+
+  @include bp-sm {
+    margin-top: $indent-m;
+  }
+}

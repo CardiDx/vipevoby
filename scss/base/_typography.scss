@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Futura PT Demi';
+  src: url('../../fonts/futura_pt_demi.eot'); /* IE 9 Compatibility Mode */
+  src: url('../../fonts/futura_pt_demi.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../../fonts/futura_pt_demi.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../../fonts/futura_pt_demi.woff')
+      format('woff'),
+    /* Firefox >= 3.6, any other modern browser */
+      url('../../fonts/futura_pt_demi.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+      url('../../fonts/futura_pt_demi.svg#futura_pt_demi') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Inter Regular'),
+    url('../../fonts/Inter-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Inter Medium'),
+    url('../../fonts/Inter-Medium.woff') format('woff');
+  font-display: swap;
+}

@@ -1,0 +1,82 @@
+.c-about {
+  padding: 9rem 0;
+
+  @include bp-md {
+    padding: 8rem 0;
+  }
+
+  @include bp-sm {
+    padding: 4rem 0;
+  }
+}
+
+.c-about__inner {
+  @include section-inner--alt;
+}
+
+.c-about__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include bp-lg {
+    flex-direction: column;
+  }
+}
+
+.с-about__image-container {
+  margin-right: 6rem;
+
+  @include bp-lg {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+
+  @include bp-md {
+  }
+}
+
+.c-about__heading {
+  max-width: 36rem;
+
+  @include bp-lg {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+.с-about__image {
+  display: block;
+}
+
+.c-about__content-text {
+  max-width: 46rem;
+
+  @include bp-lg {
+    max-width: 58rem;
+  }
+}
+
+.c-about__info {
+  margin-bottom: 4rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.c-about__info-icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: $color-primary;
+}
+
+.c-about__info-title {
+  @include type-headline-4;
+  margin: 1.6rem 0 0.8rem 0;
+}
+
+.c-about__info-description {
+  color: $color-text-secondary;
+}
