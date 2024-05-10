@@ -214,7 +214,7 @@
 }
 
 .text-slide__title {
-  @include type-headline-4;
+  // @include type-headline-4;
   margin-bottom: 24px;
 }
 
@@ -288,7 +288,7 @@
 }
 
 .text-slide__price {
-  @include type-headline-4;
+  // @include type-headline-4;
   flex-shrink: 0;
   font-weight: 400;
   font-size: 24px;

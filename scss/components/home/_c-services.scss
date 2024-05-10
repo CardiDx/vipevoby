@@ -1,17 +1,18 @@
 .c-services {
-  padding: 12.8rem 0;
+  // padding: 12.8rem 0;
 
-  @include bp-md {
-    padding: 8rem 0;
-  }
+  // @include bp-md {
+  //   padding: 8rem 0;
+  // }
 
-  @include bp-sm {
-    padding: 4rem 0;
-  }
+  // @include bp-sm {
+  //   padding: 4rem 0;
+  // }
 }
 
 .c-services__inner {
-  @include section-inner;
+  // @include section-inner;
+  background-color: $color-white;
 }
 
 .c-services__heading {
@@ -129,7 +130,7 @@
 
 .c-services__card-title {
   margin-bottom: $indent-m;
-  @include type-headline-4;
+  // @include type-headline-4;
 }
 
 .c-services__card-description {

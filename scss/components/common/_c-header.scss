@@ -1,10 +1,10 @@
 .c-header {
   position: relative;
-  border-bottom: 0.1rem solid $color-divider;
+  // border-bottom: 0.1rem solid $color-divider;
   transition-property: background-color, backdrop-filter;
   transition-duration: $motion-m;
   z-index: 0;
-
+  // display: none;
   &--scrolled {
     background-color: rgba($color-white, 0.66);
     backdrop-filter: blur(1.6rem);
@@ -19,11 +19,12 @@
 .c-header__inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
-  padding-top: 40px;
-  @include section-inner;
-  
+  padding-top: 70px;
+  padding-left: 80px;
+  padding-right: 80px;
+  // @include section-inner;
 
   @include bp-sm {
     padding-right: 0;
@@ -46,8 +47,7 @@
 
 .c-header__logo-img {
   display: inline-block;
-  height: 50px;
-  margin-right: 8px;
+  height: 80px;
 
   @include bp-sm {
     height: 40px;
@@ -110,14 +110,13 @@
 
 .c-header__menu {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
 
   @include bp-lg {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    // align-items: center;
     position: fixed;
     top: 0;
     left: 100%;
@@ -137,15 +136,18 @@
 }
 
 .c-header__menu-link {
-  font-family: $type-family--alt;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
   cursor: pointer;
   transition: color $motion-m;
   margin-left: $indent-xl;
+  color: $color-black;
   @include type-action;
-  font-size: 1.6rem;
+  font-size: 24px;
 
   @include link-events {
-    color: $color-text;
+    color: $color-black;
   }
 
   &:hover {

@@ -16,7 +16,7 @@
   max-width: 115.1rem;
   margin: 0 auto;
 
-  @include section-inner--alt;
+  // @include section-inner--alt;
 }
 
 .c-delivery__heading {
@@ -100,7 +100,7 @@
 
 .c-delivery__info-title {
   margin-bottom: $indent-s;
-  @include type-headline-4;
+  // @include type-headline-4;
 }
 
 .c-delivery__info-description {

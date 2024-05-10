@@ -1,12 +1,17 @@
 .accordion {
   display: flex;
   flex-direction: column;
-  max-width: 95rem;
-  border: 0.1rem solid $color-divider;
-  margin: 2.4rem auto;
+  // max-width: 95rem;
+  // border: 0.1rem solid $color-divider;
+  border-bottom: 1px solid;
+  // margin: 2.4rem auto;
   transition-property: opacity, transform;
   transition-duration: $motion-l;
   cursor: pointer;
+
+  &:first-child {
+    border-top: 1px solid;
+  }
 }
 
 .accordion__header {

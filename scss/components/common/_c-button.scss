@@ -1,20 +1,24 @@
 .c-button {
   display: inline-flex;
   align-items: center;
-  height: 6.8rem;
-  padding: 0 3.2rem;
-  color: $color-white;
+  flex-shrink: 0;
+  gap: 48px;
+  position: relative;
+
+  height: 78px;
+  padding: 10px 16px 10px 48px;
+
   background-color: $color-primary;
+  color: $color-black;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+
+  border-radius: 9999px;
   cursor: pointer;
   overflow: hidden;
   transition: background-color $motion-m;
-  position: relative;
-  font-family: $type-family--alt;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-feature-settings: 'salt' on, 'liga' off;
-  -webkit-text-stroke-width: unset;
-  -webkit-text-stroke: unset;
 
   @include bp-sm {
     width: 100%;
@@ -29,56 +33,56 @@
   }
 
   &:hover {
-    color: $color-white;
+    color: $color-black;
   }
 
   &:active {
-    color: $color-white;
+    color: $color-black;
   }
 
   &:visited {
-    color: $color-white;
+    color: $color-black;
   }
 }
 
-/* Overlay */
-.c-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
+// /* Overlay */
+// .c-button::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   background-color: #fff;
+//   opacity: 0;
+//   transition: opacity 0.2s;
+// }
 
-/* Ripple */
-.c-button::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  border-radius: 50%;
-  padding: 50%;
-  width: 32px;
-  /* Safari */
-  height: 32px;
-  /* Safari */
-  background-color: #fff;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(1);
-  transition: opacity 1s, transform 0.5s;
-}
+// /* Ripple */
+// .c-button::after {
+//   content: '';
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   border-radius: 50%;
+//   padding: 50%;
+//   width: 32px;
+//   /* Safari */
+//   height: 32px;
+//   /* Safari */
+//   background-color: #fff;
+//   opacity: 0;
+//   transform: translate(-50%, -50%) scale(1);
+//   transition: opacity 1s, transform 0.5s;
+// }
 
-.c-button:focus::before {
-  opacity: 0.24;
-}
+// .c-button:focus::before {
+//   opacity: 0.24;
+// }
 
-.c-button:hover:focus::before {
-  opacity: 0.3;
-}
+// .c-button:hover:focus::before {
+//   opacity: 0.3;
+// }
 
 /* Active */
 
@@ -86,6 +90,16 @@
   opacity: 0.32;
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0s;
+}
+
+.c-button__icon-rounded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 9999px;
+  background-color: $color-black;
 }
 
 .c-button__icon {

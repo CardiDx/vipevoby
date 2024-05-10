@@ -25,7 +25,7 @@ html {
 body {
   font-family: $type-family;
   color: $color-text;
-  background-color: $color-white;
+  background-color: $color-backgorund;
 
   @include type-body-1;
 }

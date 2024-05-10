@@ -1,5 +1,6 @@
 .c-heading {
-  margin-bottom: 6rem;
+  max-width: 78rem;
+  margin-bottom: 48px;
 
   @include bp-sm {
     margin-bottom: 4rem;
@@ -8,6 +9,7 @@
 
 .c-heading__title {
   @include type-headline-2;
+  color: $color-black;
 }
 
 .c-heading__description {
