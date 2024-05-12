@@ -16,13 +16,13 @@
 
   // variants
 
-  &--whatsapp {
-    mask-image: url(/img/icons/whatsapp.svg);
-    -webkit-mask-image: url(/img/icons/whatsapp.svg);
+  &--viber {
+    mask-image: url(/img/icons/viber.svg);
+    -webkit-mask-image: url(/img/icons/viber.svg);
 
-    &:hover {
-      background-color: #25d366;
-    }
+    // &:hover {
+    //   background-color: #25d366;
+    // }
   }
 
   &--telegram {

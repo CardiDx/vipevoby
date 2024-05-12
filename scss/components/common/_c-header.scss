@@ -21,9 +21,9 @@
   justify-content: space-between;
   align-items: flex-start;
   height: 100%;
-  padding-top: 70px;
+  padding-top: 24px;
   padding-left: 80px;
-  padding-right: 80px;
+  padding-right: 24px;
   // @include section-inner;
 
   @include bp-sm {
@@ -60,7 +60,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
-  font-feature-settings: 'salt' on, 'liga' off;
   color: $color-primary;
 
   @include bp-sm {
@@ -141,7 +140,7 @@
   line-height: 30px;
   cursor: pointer;
   transition: color $motion-m;
-  margin-left: $indent-xl;
+  // margin-left: $indent-xl;
   color: $color-black;
   @include type-action;
   font-size: 24px;
@@ -167,12 +166,19 @@
 }
 
 .c-header__right-side {
+  max-width: 1032px;
+  width: 100%;
+  padding: 40px 40px 0 40px;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .c-header__social {
-  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  // margin-right: 2rem;
 
   @include bp-sm {
     display: none;

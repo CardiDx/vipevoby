@@ -8,11 +8,26 @@
   // @include bp-sm {
   //   padding: 4rem 0;
   // }
+  overflow: hidden;
+  color: black;
+  background-color: $color-white;
 }
 
 .c-services__inner {
-  // @include section-inner;
-  background-color: $color-white;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  @include bp-md {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include bp-sm {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
 }
 
 .c-services__heading {
@@ -185,4 +200,70 @@
 .c-services__card-more-list {
   max-width: 92.5rem;
   color: $color-text-secondary;
+}
+
+//new
+
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.image-box {
+  width: 716px;
+  height: 534px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+  // width: 30%;
+  margin: 10px;
+  background-color: antiquewhite;
+  padding: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-box__title {
+  // color: #FFF;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  margin-bottom: 12px;
+}
+
+.image-box__price{
+  // color: #FFF;
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.image-box__button{
+  justify-content: center;
+  margin-top: auto;
+  padding-right: 48px;
+}
+
+.brand {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+}
+
+
+.image-slider {
+  display: flex;
+  flex-wrap: nowrap;
 }

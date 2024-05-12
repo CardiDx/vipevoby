@@ -6,9 +6,31 @@
 
 .c-social__link {
   cursor: pointer;
-  padding: 0.5rem;
+  color: $color-black;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
+
+  &-rounded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    background-color: $color-white;
+  }
+
+  &--phone {
+    margin-right: 60px;
+  }
 }
+
+.viber {
+  background-color: #746FBB;
+}
+
+.telegram {
+  background-color: #05A0EB;
+} 

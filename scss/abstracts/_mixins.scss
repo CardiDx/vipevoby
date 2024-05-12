@@ -1,33 +1,39 @@
+// 1620
 @mixin bp-xxl {
   @media only screen and (max-width: $screen-xxl) {
     @content;
   }
 }
 
+// 1460
 @mixin bp-xl {
   @media only screen and (max-width: $screen-xl) {
     @content;
   }
 }
 
+// 1160
 @mixin bp-lg {
   @media only screen and (max-width: $screen-l) {
     @content;
   }
 }
 
+// 992
 @mixin bp-md {
   @media only screen and (max-width: $screen-m) {
     @content;
   }
 }
 
+// 768
 @mixin bp-sm {
   @media only screen and (max-width: $screen-s) {
     @content;
   }
 }
 
+// 480
 @mixin bp-xs {
   @media only screen and (max-width: $screen-xs) {
     @content;
@@ -82,24 +88,28 @@
 }
 
 @mixin type-headline-2 {
-  font-family: $type-family--alt;
-  font-style: normal;
-  font-size: 4rem;
-  line-height: 130%;
+  font-family: $type-family;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 120%;
 
-  @include bp-md {
-    font-size: 2rem;
-    line-height: 3rem;
+  @include bp-xl {
+    font-size: 32px;
   }
+
+  // @include bp-md {
+  //   font-size: 32px;
+  // }
 }
 
 @mixin type-headline-3 {
-  font-size: 3.2rem;
-  line-height: 4.2rem;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
 
-  @include bp-md {
-    font-size: 1.7rem;
-    line-height: 2.4rem;
+  @include bp-lg{
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 
@@ -139,3 +149,5 @@
     @content;
   }
 }
+
+
