@@ -1,4 +1,12 @@
 .c-button {
+
+  -webkit-appearance: none;
+  /* Убираем стандартный стиль кнопок на iOS */
+  -moz-appearance: none;
+  /* Убираем стандартный стиль кнопок на Firefox */
+  appearance: none;
+  /* Убираем стандартный стиль кнопок */
+
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
@@ -19,9 +27,17 @@
   cursor: pointer;
   overflow: hidden;
   transition: background-color $motion-m;
+  letter-spacing: normal !important;
 
-  @include bp-sm {
+  @include bp-xl {
+    font-size: 16px;
+    height: auto;
+    padding-right: 10px;
+  }
+
+  @include bp-md {
     width: 100%;
+    justify-content: space-between;
   }
 
   &:hover {

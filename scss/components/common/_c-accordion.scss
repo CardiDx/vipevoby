@@ -16,16 +16,25 @@
 
 .accordion__header {
   position: relative;
-  padding: 1.6rem 2.4rem 1.6rem 2.4rem;
+  padding: 3.2rem 2.4rem 3.2rem 2.4rem;
   z-index: 4;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
-  @include type-body-alt;
+  font-size: 32px;
+  gap: 32px;
+  // @include type-body-alt;
+}
+
+.accordion__header-number{
+  width: 20%;
 }
 
 .accordion__header-text {
+  display: flex;
+  width: 100%;
+
   @include bp-md {
     padding-right: $indent-m;
   }

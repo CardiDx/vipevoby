@@ -15,7 +15,7 @@
 
 .c-services__inner {
   padding-left: 80px;
-  padding-right: 80px;
+  padding-right: 24px;
 
   @include bp-md {
     padding-left: 40px;
@@ -31,11 +31,20 @@
 }
 
 .c-services__heading {
-  max-width: 51.8rem;
+  display: flex;
+  gap: 100px;
+  max-width: 100%;
+}
 
-  &--services {
-    max-width: 87rem;
-  }
+.c-heading__title__service {
+  width: 1032px;
+
+}
+
+.c-heading__descr-services {
+  display: flex;
+  flex-grow: 1;
+  // flex-shrink: 0;
 }
 
 .c-services__more {
@@ -240,14 +249,14 @@
   margin-bottom: 12px;
 }
 
-.image-box__price{
+.image-box__price {
   // color: #FFF;
   font-size: 32px;
   font-weight: 700;
   opacity: 0.8;
 }
 
-.image-box__button{
+.image-box__button {
   justify-content: center;
   margin-top: auto;
   padding-right: 48px;

@@ -1,92 +1,104 @@
 .c-footer {
-  padding: 8rem 0;
-  color: $color-text;
-  background-color: $color-backgorund;
+  padding: 0 80px;
+  // color: $color-text;
+  // background-color: $color-backgorund;
+
+  // @include bp-md {
+  //   padding: 8rem 0;
+  // }
 
   @include bp-md {
-    padding: 8rem 0;
+    padding: 0 24px;
   }
-
-  @include bp-sm {
-    padding: 4rem 0;
-  }
+  font-size: 16px;
 }
 
 .c-footer__inner {
-  // @include section-inner--alt;
+
 }
 
-.c-footer__form-inner {
-  max-width: 70.5rem;
-
-  @include bp-xl {
-    max-width: 60rem;
-  }
-}
-
-.c-footer__contacts {
+.footer-content {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 27rem;
-  padding-bottom: 9rem;
-
-  @include bp-lg {
-    padding-top: 10rem;
-    padding-bottom: 0;
-  }
-
-  @include bp-sm {
-    padding-top: 4rem;
-    padding-bottom: 0;
-  }
-}
-
-.c-footer__contacts-links {
-  margin: -0.8rem 0;
-}
-
-.c-footer__row {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
-  @include bp-lg {
-    flex-direction: column;
+  @include bp-md {
+  flex-direction: column-reverse;
   }
 }
 
-.c-footer__line {
+.footer-content__left{
+
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-credit {
+  margin-bottom: 10px;
+  color: #999999;
+}
+
+.footer-credit a {
+  color: #7ca346;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-credit a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-social {
   display: flex;
   align-items: center;
-  color: $color-text;
-  padding: $indent-s 0;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.c-footer__line-icon {
-  flex-shrink: 0;
-  margin-right: $indent-s;
-}
+.footer-social .social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 99px;
+  border: 1px solid #333;
 
-.c-footer__line-link {
-  cursor: pointer;
-  transition: color $motion-m;
-
-  @include link-events {
-    color: $color-text;
-  }
-
-  &:hover {
-    color: $color-primary;
+  span{
+    width: 20px;
+    height: 20px;
   }
 }
 
-.c-footer__social-wrapper {
-  @include bp-lg {
-    margin-top: 4rem;
-  }
+.back-to-top {
+  display: inline-block;
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.c-footer__social-wrapper-title {
-  margin-bottom: $indent-s;
+.back-to-top span {
+  
+}
+
+.footer-bar {
+  height: 5px;
+  background-color: $color-primary;
+  width: 100%;
+  margin-top: 20px;
 }

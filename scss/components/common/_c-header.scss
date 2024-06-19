@@ -1,18 +1,33 @@
 .c-header {
-  position: relative;
+  position: fixed;
   // border-bottom: 0.1rem solid $color-divider;
   transition-property: background-color, backdrop-filter;
   transition-duration: $motion-m;
   z-index: 0;
   // display: none;
+  left: 0;
+  right: 0;
+
   &--scrolled {
-    background-color: rgba($color-white, 0.66);
-    backdrop-filter: blur(1.6rem);
+    background-color: $color-black;
+    height: 100px;
+  }
+
+  &--scrolled .c-header__inner .c-header__right-side .c-header__menu {
+    color: $color-white ;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &--scrolled .c-header__inner .c-header__logo-img {
+    height: 64px;
   }
 
   @include bp-md {
     height: 7.2rem;
     padding: 0;
+    background-color: #0d0d0f;
+    width: 100%;
   }
 }
 
@@ -28,6 +43,7 @@
 
   @include bp-sm {
     padding-right: 0;
+    padding-left: 24px;
   }
 }
 
@@ -48,6 +64,7 @@
 .c-header__logo-img {
   display: inline-block;
   height: 80px;
+  transition: all $motion-m;
 
   @include bp-sm {
     height: 40px;
@@ -102,6 +119,7 @@
   &--active::before {
     transform: rotate(45deg) translate(0.3rem, 0.3rem);
   }
+
   &--active::after {
     transform: rotate(-45deg) translate(0.3rem, -0.3rem);
   }
@@ -136,7 +154,7 @@
 
 .c-header__menu-link {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 30px;
   cursor: pointer;
   transition: color $motion-m;
@@ -162,6 +180,10 @@
     font-size: 1.6rem;
     padding: 1.2rem 0;
     margin-left: 0;
+  }
+
+  @include bp-md {
+    color: $color-white;
   }
 }
 
