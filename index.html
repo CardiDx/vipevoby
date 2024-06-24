@@ -12,6 +12,7 @@
   <!--==================== CSS ====================-->
   <!-- <link rel="stylesheet" href="/css/swiper-bundle.min.css"> -->
   <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+  <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -34,10 +35,10 @@
         data-js-header-opened="c-header--opened">
         <div class="c-header__inner">
           <div class="c-header__mobile-column">
-            <button class="c-header__burger" data-js-header-toggle
-              data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu"></button>
+            <!-- <button class="c-header__burger" data-js-header-toggle
+              data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu"></button> -->
             <a href="/" class="c-header__logo" aria-label="logo-link">
-              <img src="/img/logo-vipevokuator.svg" class="c-header__logo-img  " alt="kvantom logo" width="102"
+              <img src="./img/logo-vipevokuator.svg" class="c-header__logo-img  " alt="kvantom logo" width="102"
                 height="80">
             </a>
           </div>
@@ -70,6 +71,8 @@
 
 
           </div>
+          <button class="c-header__burger" data-js-header-toggle
+            data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu"></button>
         </div>
       </div>
 
@@ -104,8 +107,8 @@
           </div>
 
           <picture class="c-home__image">
-            <!-- <source type="image/webp" srcset="/img/electroshit-intro.webp" width="1320" height="500"> -->
-            <img class="c-home__image-src" src="/img/car-evokuator-grodno.png" alt="Эваокуатор авто на дороге"
+            <!-- <source type="image/webp" srcset="./img/electroshit-intro.webp" width="1320" height="500"> -->
+            <img class="c-home__image-src" src="./img/car-evokuator-grodno.png" alt="Эваокуатор авто на дороге"
               data-aos-duration="3500" data-aos="fade-up" data-aos-easing="ease-in-sine">
           </picture>
 
@@ -116,9 +119,9 @@
 
       <!--==================== Services ====================-->
       <section class="c-services section" id="services">
-        <div class="c-services__inner">
+        <div class="container">
 
-          <div class="c-heading c-services__heading">
+          <!-- <div class="c-heading c-services__heading">
             <p class="c-heading__descr-services">Curious about the benefits of working together Energy park?</p>
             <div class="c-heading__title__service">
               <h2 class="c-heading__title">Мы предоставляем безопасную эвакуацию автомобиля, с
@@ -126,50 +129,98 @@
                 бухгалтерий
               </h2>
             </div>
+          </div> -->
+
+          <div class="c-heading c-services__heading">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+                <p class="c-heading__descr-services">Будьте уверенным в безопасности вашего автомобиляБудьте уверенным в безопасности вашего автомобиля</p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-7 offset-lg-1">
+                <h2 class="c-heading__title">Будьте уверенным в безопасности вашего автомобиля. Будьте уверенным в безопасности вашего автомобиля
+              </div>
+            </div>
           </div>
 
 
 
-          <div class="image-slider">
-            <div class="image-container">
-              <div class="image-box">
-                <!-- <img class="image-box__src" src="/img/car-wheel.png" alt="Woman using EV charger"> -->
-                <h3 class="image-box__title">Эвакуация легковы авто</h3>
-                <span class="image-box__price">от 90BYN</span>
-                <a data-service="order-a-project" class="image-box__button c-button show-sontact-us" href="#">Вызвать
-                  эвакуатор</a>
+          <div class="image-tiles">
+            <div class="row">
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="image-tile">
+                  <img class="image-tile__img" src="./img/car-wheel.jpg" alt="Woman using EV charger">
+                  <div class="image-tile-content">
+                    <h3 class="image-tile__title">Эвакуация легковы авто</h3>
+                    <span class="image-tile__price">от 90BYN</span>
+                  </div>
+                  <a data-service="order-a-project" class="image-box__button c-button show-sontact-us" href="#">Вызвать
+                    эвакуатор</a>
+                </div>
               </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="image-tile">
+                  <img class="image-tile__img" src="./img/car-wheel.jpg" alt="Woman using EV charger">
+                  <div class="image-tile-content">
+                    <h3 class="image-tile__title">Эвакуация легковы авто</h3>
+                    <span class="image-tile__price">от 90BYN</span>
+                  </div>
+                  <a data-service="order-a-project" class="image-box__button c-button show-sontact-us" href="#">Вызвать
+                    эвакуатор</a>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="image-tile">
+                  <img class="image-tile__img" src="./img/car-wheel.jpg" alt="Woman using EV charger">
+                  <div class="image-tile-content">
+                    <h3 class="image-tile__title">Эвакуация легковы авто</h3>
+                    <span class="image-tile__price">от 90BYN</span>
+                  </div>
+                  <a data-service="order-a-project" class="image-box__button c-button show-sontact-us" href="#">Вызвать
+                    эвакуатор</a>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="image-tile">
+                  <img class="image-tile__img" src="./img/car-wheel.jpg" alt="Woman using EV charger">
+                  <div class="image-tile-content">
+                    <h3 class="image-tile__title">Эвакуация легковы авто</h3>
+                    <span class="image-tile__price">от 90BYN</span>
+                  </div>
+                  <a data-service="order-a-project" class="image-box__button c-button show-sontact-us" href="#">Вызвать
+                    эвакуатор</a>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="image-tile">
+                  <img class="image-tile__img" src="./img/car-wheel.jpg" alt="Woman using EV charger">
+                  <div class="image-tile-content">
+                    <h3 class="image-tile__title">Эвакуация легковы авто</h3>
+                    <span class="image-tile__price">от 90BYN</span>
+                  </div>
+                  <a data-service="order-a-project" class="image-box__button c-button show-sontact-us" href="#">Вызвать
+                    эвакуатор</a>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="image-tile">
+                  <img class="image-tile__img" src="./img/car-wheel.jpg" alt="Woman using EV charger">
+                  <div class="image-tile-content">
+                    <h3 class="image-tile__title">Эвакуация легковы авто</h3>
+                    <span class="image-tile__price">от 90BYN</span>
+                  </div>
+                  <a data-service="order-a-project" class="image-box__button c-button show-sontact-us" href="#">Вызвать
+                    эвакуатор</a>
+                </div>
+              </div>
+
             </div>
 
-            <div class="image-container">
-              <div class="image-box">
-                <!-- <img class="image-box__src" src="/img/car-wheel.png" alt="Woman using EV charger"> -->
-                <h3 class="image-box__title">Эвакуация легковы авто</h3>
-                <span class="image-box__price">от 90BYN</span>
-                <a data-service="order-a-project" class="image-box__button c-button show-sontact-us" href="#">Вызвать
-                  эвакуатор</a>
-              </div>
-            </div>
-
-            <div class="image-container">
-              <div class="image-box">
-                <!-- <img class="image-box__src" src="/img/car-wheel.png" alt="Woman using EV charger"> -->
-                <h3 class="image-box__title">Эвакуация легковы авто</h3>
-                <span class="image-box__price">от 90BYN</span>
-                <a data-service="order-a-project" class="image-box__button c-button show-sontact-us" href="#">Вызвать
-                  эвакуатор</a>
-              </div>
-            </div>
-
-            <div class="image-container">
-              <div class="image-box">
-                <!-- <img class="image-box__src" src="/img/car-wheel.png" alt="Woman using EV charger"> -->
-                <h3 class="image-box__title">Эвакуация легковы авто</h3>
-                <span class="image-box__price">от 90BYN</span>
-                <a data-service="order-a-project" class="image-box__button c-button show-sontact-us" href="#">Вызвать
-                  эвакуатор</a>
-              </div>
-            </div>
 
           </div>
 
@@ -222,44 +273,35 @@
                 areas, </p>
             </div>
           </div>
-
-
         </div>
       </section>
 
-      <section class="gallery section" id="gallery">
-        <img data-image="https://assets.codepen.io/191814/106-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg"
-          src="https://assets.codepen.io/191814/106-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=480&height=360&format=auto"
-          data-caption="This is a lightbox image using attributes data-image & image-caption"
-          src="https://assets.codepen.io/191814/106-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=480&height=360&format=auto"
-          alt="Bywater Biennial New Orleans ALT One" />
-
-        <img
-          src="https://assets.codepen.io/191814/111-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=672&height=503&format=auto"
-          alt="Bywater Biennial New Orleans ALT Two" data-caption="Custom caption HTML allowed" />
-
-        <img
-          src="https://assets.codepen.io/191814/105-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
-          alt="Bywater Biennial New Orleans ALT Three" />
-        <img
-          src="https://assets.codepen.io/191814/102-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
-          alt="Bywater Biennial New Orleans ALT Four" data-caption="Custom caption HTML allowed" />
-        <img
-          src="https://assets.codepen.io/191814/104-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
-          alt="Bywater Biennial New Orleans ALT Five" />
-        <img
-          src="https://assets.codepen.io/191814/107-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
-          alt="Bywater Biennial New Orleans ALT Six" data-caption="Custom caption HTML allowed" />
-        <img
-          src="https://assets.codepen.io/191814/109-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
-          alt="Bywater Biennial New Orleans ALT Seven" />
-        <img
-          src="https://assets.codepen.io/191814/110-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
-          alt="Bywater Biennial New Orleans ALT Eight" data-caption="Custom caption HTML allowed" />
-        <img
-          src="https://assets.codepen.io/191814/108-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
-          alt="Bywater Biennial New Orleans ALT Nine" />
-
+      <!--==================== GALLERY ====================-->
+      <section class="gallery-section section">
+        <div class="container">
+          <h2 class="gallery__title">Будьте уверенными
+            в безопасности Вашего автомобиля</h2>
+          <div class="gallery" id="gallery">
+            <img
+              src="https://assets.codepen.io/191814/105-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
+              alt="Bywater Biennial New Orleans ALT Three" />
+            <img
+              src="https://assets.codepen.io/191814/104-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
+              alt="Bywater Biennial New Orleans ALT Five" />
+            <img
+              src="https://assets.codepen.io/191814/107-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
+              alt="Bywater Biennial New Orleans ALT Six" />
+            <img
+              src="https://assets.codepen.io/191814/109-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
+              alt="Bywater Biennial New Orleans ALT Seven" />
+            <img
+              src="https://assets.codepen.io/191814/110-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
+              alt="Bywater Biennial New Orleans ALT Eight" />
+            <img
+              src="https://assets.codepen.io/191814/108-bywater-biennnial-new-orleans--2015-sottek-DSCN4987.jpg?width=864&height=648&format=auto"
+              alt="Bywater Biennial New Orleans ALT Nine" />
+          </div>
+        </div>
       </section>
 
       <!-- The lightbox div contains controls and an image for displaying enlarged images -->
@@ -272,602 +314,169 @@
         </figure>
       </div>
 
-      <!--==================== steps ====================-->
-      <!-- <section class="c-steps-work" id="how-work">
-        <div class="c-steps-work__inner">
-          <div class="c-heading c-steps-work__heading">
-            <h2 class="c-heading__title">Как работаем?</h2>
-          </div>
-          <ul class="c-steps-work__list">
-            <li class="c-steps-work__list-item">
-              <div class="c-steps-work__list-item-number">01</div>
-              <div class="c-steps-work__list-item-text">
-                <p class="c-steps-work__list-item-description">Обсуждение задачи и заполнение анкеты совместно с нашим
-                  инженером по телефону</p>
-              </div>
-            </li>
-            <li class="c-steps-work__list-item">
-              <div class="c-steps-work__list-item-number">02</div>
-              <div class="c-steps-work__list-item-text">
-                <p class="c-steps-work__list-item-description">Предоплата 50% от стоимости проекта</p>
-              </div>
-            </li>
-            <li class="c-steps-work__list-item">
-              <div class="c-steps-work__list-item-number">03</div>
-              <div class="c-steps-work__list-item-text">
-                <p class="c-steps-work__list-item-description">Проектирование электрощитка</p>
-              </div>
-            </li>
-            <li class="c-steps-work__list-item">
-              <div class="c-steps-work__list-item-number">04</div>
-              <div class="c-steps-work__list-item-text">
-                <p class="c-steps-work__list-item-description">Оплата проекта. После оплаты вы получаете готовый проект
-                  для вашего объекта</p>
-              </div>
-            </li>
-            <li class="c-steps-work__list-item">
-              <div class="c-steps-work__list-item-number">05</div>
-              <div class="c-steps-work__list-item-text">
-                <p class="c-steps-work__list-item-description">Согласование цены за электрощиток. При выборе сборки
-                  у нас вы экономите 30% от стоимости проекта. Мы уточняем актуальность цен на комплектующие
-                  и приступаем к сборке после оплаты. Собираем по согласованному с вами проекту, либо ТЗ</p>
-              </div>
-            </li>
-            <li class="c-steps-work__list-item">
-              <div class="c-steps-work__list-item-number">06</div>
-              <div class="c-steps-work__list-item-text">
-                <p class="c-steps-work__list-item-description">Доставка</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section> -->
-
-      <!-- <section class="c-works" id="works">
-        <div class="c-works__inner">
-          <div class="c-heading c-works__heading">
-            <h2 class="c-heading__title">Примеры работ</h2>
-          </div>
-
-          <div class="gallery-container__wrapper">
-            <div class="gallery-container">
-              <div class="swiper-container gallery-main">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <picture>
-                      <source type="image/webp" srcset="/img/complete-work/electroshit-1.webp" width="719" height="414">
-                      <img src="img/complete-work/electroshit-1.jpg" width="719" height="414" alt="электртощит наши работы">
-                    </picture>
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source type="image/webp" srcset="/img/complete-work/kachestvennaya-sborka-shchita.webp" width="719" height="414">
-                      <img src="img/complete-work/kachestvennaya-sborka-shchita.jpg" width="719" height="414" alt="электртощит вблизи">
-                    </picture>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source type="image/webp" srcset="/img/complete-work/shchit-v-butik-torgovogo-centra.webp" width="719" height="414">
-                      <img src="img/complete-work/shchit-v-butik-torgovogo-centra.jpg" width="719" height="414" alt="щит в бутик торгового центра">
-                    </picture>
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source type="image/webp" srcset="/img/complete-work/zastavka-vru-avr.webp" width="719" height="414">
-                      <img src="img/complete-work/zastavka-vru-avr.jpg" width="719" height="414" alt="завставка вру-авр">
-                    </picture>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source type="image/webp" srcset="/img/complete-work/shchit-appartment.webp" width="719" height="414">
-                      <img src="img/complete-work/shchit-appartment.jpg" width="719" height="414" alt="электртощит в квартиру">
-                    </picture>
-                  </div>
-                </div>
-
-                <div class="gallery-container__swiper-navigate">
-                  <div class="swiper-custom-prev swiper-button-prev"><span class="c-icon c-icon--long-arrow swiper-custom-navigate__icon"></span></div>
-                  <div class="swiper-custom-next swiper-button-next"><span class="c-icon c-icon--long-arrow c-icon--rotate swiper-custom-next__icon swiper-custom-navigate__icon"></span>
-                  </div>
-                </div>
-
-              </div>
-              <div class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <picture>
-                      <source type="image/webp" srcset="/img/complete-work/electroshit-1.webp" width="93" height="68">
-                      <img src="img/complete-work/electroshit-1.jpg" width="93" height="68" alt="электртощит наши работы миниатюра">
-                    </picture>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source type="image/webp" srcset="/img/complete-work/kachestvennaya-sborka-shchita.webp" width="93" height="68">
-                      <img src="img/complete-work/kachestvennaya-sborka-shchita.jpg" width="93" height="68" alt="электртощит наши работы миниатюра">
-                    </picture>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source type="image/webp" srcset="/img/complete-work/shchit-v-butik-torgovogo-centra.webp" width="93" height="68">
-                      <img src="img/complete-work/shchit-v-butik-torgovogo-centra.jpg" width="93" height="68" alt="щит в бутик торгового центра миниатюра">
-                    </picture>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source type="image/webp" srcset="/img/complete-work/zastavka-vru-avr.webp" width="93" height="68">
-                      <img src="img/complete-work/zastavka-vru-avr.jpg" width="93" height="68" alt="завставка вру-авр миниатюра">
-                    </picture>
-
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source type="image/webp" srcset="/img/complete-work/shchit-appartment.webp" width="93" height="68">
-                      <img src="img/complete-work/shchit-appartment.jpg" width="93" height="68" alt="электртощит в квартиру миниатюра">
-                    </picture>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="gallery-text">
-              <div class="swiper-wrapper text-wrapper">
-                <div class="swiper-slide text-slide">
-                  <div class="swipe-slide__inner">
-
-                    <div class="swipe-slide__text">
-                      <h3 class="text-slide__title">Электрощит для квартиры на Hager. <span class="text-slide__subtitle">1
-                          фаза 45кв.м. Москва.</span></h3>
-                      <ul class="text-slide__list">
-                        <li>
-                          <span class="text-slide__list-title">Тип объекта</span>
-
-                          <span class="text-slide__list-description">Квартира, вторичка;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Площадь</span>
-
-                          <span class="text-slide__list-description">62кв.м;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Ввод</span>
-                          <span class="text-slide__list-description">1 фаза, 40;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Количество комнат</span>
-                          <span class="text-slide__list-description">2, два балкона, один санузел;</span>
-                        </li>
-                      </ul>
-                      <p class="text-slide__preferences"> <span>Пожелания:</span>Неотключаемая линия, свет на контролле
-                        Siemens.</p>
-                    </div>
-                    <div class="swipe-slide__price-wrapper">
-                      <div class="text-slide__proceed">
-                        <a data-service="order-a-project" class="swiper-slide__button c-button show-sontact-us" href="#">Хочу такой же!</a>
-                        <span class="text-slide__price">68 005 ₽</span>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="swiper-slide text-slide">
-                  <div class="swipe-slide__inner">
-                    <div class="swipe-slide__text">
-                      <h3 class="text-slide__title">Электрощит в бассейн <span class="text-slide__subtitle">5 фаз
-                          145кв.м.
-                          Москва.</span></h3>
-                      <ul class="text-slide__list">
-                        <li>
-                          <span class="text-slide__list-title">Тип объекта</span>
-
-                          <span class="text-slide__list-description">Комплекс;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Площадь</span>
-
-                          <span class="text-slide__list-description">145кв.м;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Ввод</span>
-                          <span class="text-slide__list-description">5 фаз, 40;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Количество комнат</span>
-                          <span class="text-slide__list-description">9, четыре санузела;</span>
-                        </li>
-                      </ul>
-                      <p class="text-slide__preferences"> <span>Пожелания:</span>Неотключаемая линия, свет на контролле
-                        Siemens.</p>
-                    </div>
-                    <div class="swipe-slide__price-wrapper">
-                      <div class="text-slide__proceed">
-                        <a data-service="order-a-project" class="swiper-slide__button c-button show-sontact-us" href="#">Хочу такой же!</a>
-                        <span class="text-slide__price">68 005 ₽</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide text-slide">
-                  <div class="swipe-slide__inner">
-                    <div class="swipe-slide__text">
-                      <h3 class="text-slide__title">Щит в бутик торгового центра <span class="text-slide__subtitle">1
-                          фаза
-                          73кв.м. Москва.</span></h3>
-                      <ul class="text-slide__list">
-                        <li>
-                          <span class="text-slide__list-title">Тип объекта</span>
-
-                          <span class="text-slide__list-description">Квартира, вторичка;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Площадь</span>
-
-                          <span class="text-slide__list-description">73кв.м;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Ввод</span>
-                          <span class="text-slide__list-description">1 фаза, 40;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Количество комнат</span>
-                          <span class="text-slide__list-description">1</span>
-                        </li>
-                      </ul>
-                      <p class="text-slide__preferences"> <span>Пожелания:</span>Неотключаемая линия, свет на контролле
-                        Siemens.</p>
-                    </div>
-                    <div class="swipe-slide__price-wrapper">
-                      <div class="text-slide__proceed">
-                        <a data-service="order-a-project" class="swiper-slide__button c-button show-sontact-us" href="#">Хочу такой же!</a>
-                        <span class="text-slide__price">115 000 ₽</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide text-slide">
-                  <div class="swipe-slide__inner">
-                    <div class="swipe-slide__text">
-                      <h3 class="text-slide__title">Заставка ВРУ - АВР <span class="text-slide__subtitle">2 фазы
-                          114кв.м.
-                          Москва.</span></h3>
-                      <ul class="text-slide__list">
-                        <li>
-                          <span class="text-slide__list-title">Тип объекта</span>
-
-                          <span class="text-slide__list-description">Магазин;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Площадь</span>
-
-                          <span class="text-slide__list-description">114кв.м;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Ввод</span>
-                          <span class="text-slide__list-description">2 фазы, 40;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Количество комнат</span>
-                          <span class="text-slide__list-description">3, один санузел;</span>
-                        </li>
-                      </ul>
-                      <p class="text-slide__preferences"> <span>Пожелания:</span>Неотключаемая линия, свет на
-                        контролле
-                        Siemens.</p>
-                    </div>
-                    <div class="swipe-slide__price-wrapper">
-                      <div class="text-slide__proceed">
-                        <a data-service="order-a-project" class="swiper-slide__button c-button show-sontact-us" href="#">Хочу такой же!</a>
-                        <span class="text-slide__price">149 000 ₽</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide text-slide">
-                  <div class="swipe-slide__inner">
-                    <div class="swipe-slide__text">
-                      <h3 class="text-slide__title">Щит в квартиру <span class="text-slide__subtitle">1 фаза 51кв.м.
-                          Москва.</span></h3>
-                      <ul class="text-slide__list">
-                        <li>
-                          <span class="text-slide__list-title">Тип объекта</span>
-
-                          <span class="text-slide__list-description">Квартира;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Площадь</span>
-
-                          <span class="text-slide__list-description">51кв.м;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Ввод</span>
-                          <span class="text-slide__list-description">1 фаза, 40;</span>
-                        </li>
-                        <li>
-                          <span class="text-slide__list-title">Количество комнат</span>
-                          <span class="text-slide__list-description">2, один балкон, один санузел;</span>
-                        </li>
-                      </ul>
-                      <p class="text-slide__preferences"> <span>Пожелания:</span>Неотключаемая линия, свет на контролле
-                        Siemens.</p>
-                    </div>
-                    <div class="swipe-slide__price-wrapper">
-                      <div class="text-slide__proceed">
-                        <a data-service="order-a-project" class="swiper-slide__button c-button show-sontact-us" href="#">Хочу такой же!</a>
-                        <span class="text-slide__price">45 000 ₽</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </section> -->
-
-      <!--==================== Delivery ====================-->
-      <!-- <section class="с-delivery section" id="delivery">
-        <div class="c-delivery__inner">
-          <div class="c-heading c-delivery__heading">
-            <h2 class="c-heading__title">Доставка</h2>
-          </div>
-
-
-          <div class="c-delivery__content">
-
-            <div class="с-delivery__image-container">
-
-              <picture class="с-delivery__picture">
-                <source type="image/webp" src="img/delivery-car-kvantom.webp" width="582" height="273"
-                  alt="Машина доставки товара" data-aos="fade-right" data-aos-duration="2000">
-                <img class="с-delivery__image" src="img/delivery-car-kvantom.png" width="582" height="273"
-                  alt="Машина доставки товара" data-aos="fade-right" data-aos-duration="2000">
-              </picture>
-            </div>
-
-            <div class="c-delivery__content-text" data-aos="fade-left" data-aos-duration="2000">
-              <div class="c-delivery__info">
-                <h3 class="c-delivery__info-title">О нас</h3>
-                <p class="c-delivery__info-description">Недорогая эвакуация автомобилей в Гродно! Звоните по номеру +375
-                  (29) 780-66-77. </p>
-                <p class="c-delivery__info-description">Мы предлагаем полную или частичную погрузку до 5 метров для
-                  легковых, микроавтобусов и грузовых автомобилей. Наша компания имеет 7+ лет опыта в эвакуации
-                  автомобилей, поэтому мы уверены в качестве нашей работы. Если вы попали в аварийную ситуацию на
-                  дороге, нам необходимо обратиться за профессиональной помощью службы эвакуации автомобилей. Мы
-                  тщательно оттачиваем весь рабочий процесс и готовы оперативно реагировать на ваш вызов. </p>
-                <p class="c-delivery__info-description">Просто свяжитесь с нашим диспетчером, сообщите необходимую
-                  информацию о месте происшествия, модели и весе вашего автомобиля, а также типе неисправности. Мы
-                  мгновенно отправим подходящий эвакуатор для вашей ситуации. Ваше спокойствие - наша работа!</p>
-              </div>
-
-              <a href="#" class="button">Вызвать эвакуатор</a>
-
-            </div>
+      <!--==================== CALLBACK ====================-->
+      <section class="callback-section section">
+        <div class="container">
+          <div class="callback">
+            <img class="callback__bg" src="./img/callback-bg.jpg">
+            <form action="" class="callback-form">
+              <span class="callback-form__title">Остались вопросы?</span>
+              <span class="callback-form__subtitle">Оставьте контакты, и наш специалист свяжется с Вами</span>
+              <input type="text" name="name" class="callback-form__input" placeholder="Введите Ваше имя" required>
+              <input type="text" name="phone" class="callback-form__input" placeholder="Введите Ваш телефон" required>
+              <span class="callback-form__notice">Нажимая кнопку "Отправить" Вы принимаете условия <a href="#" class="callback-form__notice-link">Политики обработки персональных данных.</a></span>
+              <input type="submit" value="Отправить" class="callback-form__btn">
+            </form>
           </div>
         </div>
-
-      </section> -->
-
-      <section data-dark="true"
-        class="content-section_type_paddings content-section__why-us content-section__why-us-compact"
-        data-v-605f52f7="">
-        <h2 class="content-section__title">
-          Эвакуатор всегда на линии. Круглосуточный режим и экономия вашего времени
-        </h2>
-
-        <form class="callback-form h100">
-          <div>
-            <!--  -->
-            <div class="callback-form__wrap">
-              <div class="callback-form-input">
-                <div class="form-item"><input type="text" autocomplete="off" required="required" placeholder="" id=""
-                    title="" class="pointer"> <label for="" class="pointer form-item__label">
-                    Ваше имя
-                  </label>
-                </div>
-              </div>
-
-              <div class="callback-form-input">
-                <div class="empty form-item form-item-phone">
-                  <input type="text" autocomplete="off" required="required" id="" placeholder="" title=""
-                    inputmode="numeric" class="pointer form-item__preffix-input"> <label for=""
-                    class="pointer form-item__label">
-                    Телефон
-                  </label>
-                </div>
-              </div>
-
-              <div class="callback-form__btns mt-30">
-
-                <button class="button button-color callback-form__button mb-30 pointer">
-                  Отправить заявку
-                </button>
-
-                <div class="privacy-block callback-form__privacy-block">
-                  <div class="checkbox"><input type="checkbox" name="privacy" class="custom-checkbox"> <label></label>
-                  </div>
-                  <div class="callback-form__privacy-block-text">
-                    <div class="mb-5">Нажимая на кнопку, вы принимаете условия </div>
-                    <div class="mb-8"><a href="/files/legal/privacy_policy/private_policy_01.02.2017.pdf"
-                        target="_blank"> политики конфиденциальности </a>и <a href="/files/docs/agreement.pdf"
-                        target="_blank">обработки <span class="nowrap">персональных данных</span></a></div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-            <div class="callback-form__wrap d-flex align-center h100" style="display: none;"><a href="#"
-                class="mb-10 d-inblock back-btn-2 callback-form__back-btn">
-                Назад
-              </a>
-              <div class="callback-form-confirm w100">
-                <p class="mb-20 callback-form-confirm__title heading-font w500">
-                  Введите код из смс
-                </p>
-                <div class="form-item"><input type="number" required="required" title="" pattern="[0-9]*"
-                    inputmode="numeric" placeholder="0 0 0 0" class="pointer"> <label
-                    class="pointer form-item__label">Код из смс</label></div>
-              </div>
-            </div>
-          </div>
-        </form>
+        
       </section>
 
-      <!--==================== faq ====================-->
-      <section class="faq section" id="faq">
-        <div class="c-faq__inner">
-          <div class="c-heading">
-            <h2 class="c-faq__title c-heading__title">Ответы на самые популярные вопросы, чтобы вы были в курсе</h2>
-            <div class="c-heading__faq-img">
-              <img src="/img/car-evokuator-grodno.png" alt="">
+      <!--==================== ABOUT ====================-->
+      <section class="about-section section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h2 class="about__title">О нас</h2>
+              <p class="about__p">Недорогая эвакуация автомобилей в Гродно! Звоните по номеру +375 (29) 780-66-77. </p>
+              <p class="about__p">Мы предлагаем полную или частичную погрузку до 5 метров для легковых, микроавтобусов и грузовых автомобилей. Наша компания имеет 7+ лет опыта в эвакуации автомобилей, поэтому мы уверены в качестве нашей работы. Если вы попали в аварийную ситуацию на дороге, нам необходимо обратиться за профессиональной помощью службы эвакуации автомобилей. Мы тщательно оттачиваем весь рабочий процесс и готовы оперативно реагировать на ваш вызов.</p>
+              <p class="about__p">Просто свяжитесь с нашим диспетчером, сообщите необходимую информацию о месте происшествия, модели и весе вашего автомобиля, а также типе неисправности. Мы мгновенно отправим подходящий эвакуатор для вашей ситуации. Ваше спокойствие - наша работа!</p>
+              <a href="#" class="about__btn">Задать свой вопрос в Viber 
+                <img class="about__btn-icon" src="./img/icons/viber.svg"></a>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="about-pic">
+                <img src="./img/about-bg.jpg" class="about-pic__bg">
+                <div class="about-pic-tiles">
+                  <div class="about-pic-tile">
+                    <span class="about-pic-tile__number">6+</span>
+                    <span class="about-pic-tile__text"><strong>лет занимаемся</strong> эвакуацией авто</span>
+                  </div>
+                  <div class="about-pic-tile">
+                    <span class="about-pic-tile__number">12</span>
+                    <span class="about-pic-tile__text"><strong>лет занимаемся</strong> эвакуацией авто</span>
+                  </div>
+                  <div class="about-pic-tile">
+                    <span class="about-pic-tile__number">8</span>
+                    <span class="about-pic-tile__text"><strong>лет занимаемся</strong> эвакуацией авто</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div>
-            <label class="accordion">
-              <input class="accordion__checkbox" type='checkbox' name='checkbox-accordion'>
-              <div class="accordion__header">
-                <span class="accordion__header-number">01</span>
-                <span class="accordion__header-text">Почему я должен вам доверять?</span>
+        </div>
+      </section>
 
-                <span class="accordion__header-icon c-icon c-icon--dropdown-arrow"></span>
+      <!--==================== FAQ ====================-->
+      <section class="faq section" id="faq">
+        <div class="c-faq__inner">
+          <div class="container">
+            <div class="row" style="gap: 20px 0;">
+              <div class="col-12 col-md-6 col-lg-7">
+                <h2 class="c-faq__title">Ответы на самые популярные вопросы, чтобы вы были в курсе</h2>
               </div>
-              <div class="accordion__content">
-                <p>Опыть работы в электрике 9 лет</p>
-                <p>Сотрудничаем с сетью ресторанов Тануки. Сделали 20 ресторанов</p>
-                <p>Сотрудничаем с сетью магазинов Swatch в торговых центрах</p>
-                <p>Сотрудничаем с департаментом Кап. ремонта Москвы.</p>
+              <div class="col-12 col-md-6 col-lg-5 d-flex justify-content-end">
+                <img src="./img/car-wheel.png" alt="" class="c-heading__faq-img">
               </div>
-            </label>
-            <label class="accordion">
-              <input class="accordion__checkbox" type='checkbox' name='checkbox-accordion'>
-              <div class="accordion__header">
-                <span class="accordion__header-number">02</span>
-                <span class="accordion__header-text">Сколько времени пройдет от заказа до установки ЭЩ?</span>
-                <span class="accordion__header-icon c-icon c-icon--dropdown-arrow"></span>
-              </div>
-              <div class="accordion__content">
-                <p>1. Если работаем 1-2-хкомнатной квартирой - 1 неделя.
-                  (1-2 дня проект. 3-4 дня доставка комплектующих. 1 день сборка).</p>
-                <p>2. Если работаем с 3-хкомнатной квартирой, домом - 8-9 дней.
-                  (1-2 дня проект. 3-4 дня доставка комплектующих. 2-3 дня сборка).</p>
-              </div>
-            </label>
-
-            <label class="accordion">
-              <input class="accordion__checkbox" type='checkbox' name='checkbox-accordion'>
-              <div class="accordion__header">
-                <span class="accordion__header-number">03</span>
-                <span class="accordion__header-text">Почему у вас так дорого?</span>
-                <span class="accordion__header-icon c-icon c-icon--dropdown-arrow"></span>
-              </div>
-              <div class="accordion__content">
-                <p>Мы используем только оригинальные комплектующие с завода
-                  производителя ABB, Schneider, Legrand... И не заказываем на
-                  Aliexpress и других маркетпqейсаw.</p>
-                <p>!НО можем сделать дешевле на китайскиw комплектующих IEK, EKF,
-                  TDM. </p>
-              </div>
-            </label>
-
-            <label class="accordion">
-              <input class="accordion__checkbox" type='checkbox' name='checkbox-accordion'>
-              <div class="accordion__header">
-                <span class="accordion__header-number">04</span>
-                <span class="accordion__header-text">Почему у вас дешевле, чем у конкурентов?</span>
-                <span class="accordion__header-icon c-icon c-icon--dropdown-arrow"></span>
-              </div>
-              <div class="accordion__content">
-                <p>У нас нет штата менеджеров по продажам и комфортного офиса в Москве. Только склад и сборочный цех.
-                </p>
-              </div>
-            </label>
+            </div>
+            <div class="accordion-wrapper">
+              <label class="accordion">
+                <input class="accordion__checkbox" type='checkbox' name='checkbox-accordion'>
+                <div class="accordion__header">
+                  <span class="accordion__header-number">01</span>
+                  <span class="accordion__header-text">Почему я должен вам доверять?</span>
+  
+                  <span class="accordion__header-icon c-icon c-icon--dropdown-arrow"></span>
+                </div>
+                <div class="accordion__content">
+                  <p>Опыть работы в электрике 9 лет</p>
+                  <p>Сотрудничаем с сетью ресторанов Тануки. Сделали 20 ресторанов</p>
+                  <p>Сотрудничаем с сетью магазинов Swatch в торговых центрах</p>
+                  <p>Сотрудничаем с департаментом Кап. ремонта Москвы.</p>
+                </div>
+              </label>
+              <label class="accordion">
+                <input class="accordion__checkbox" type='checkbox' name='checkbox-accordion'>
+                <div class="accordion__header">
+                  <span class="accordion__header-number">02</span>
+                  <span class="accordion__header-text">Сколько времени пройдет от заказа до установки ЭЩ?</span>
+                  <span class="accordion__header-icon c-icon c-icon--dropdown-arrow"></span>
+                </div>
+                <div class="accordion__content">
+                  <p>1. Если работаем 1-2-хкомнатной квартирой - 1 неделя.
+                    (1-2 дня проект. 3-4 дня доставка комплектующих. 1 день сборка).</p>
+                  <p>2. Если работаем с 3-хкомнатной квартирой, домом - 8-9 дней.
+                    (1-2 дня проект. 3-4 дня доставка комплектующих. 2-3 дня сборка).</p>
+                </div>
+              </label>
+  
+              <label class="accordion">
+                <input class="accordion__checkbox" type='checkbox' name='checkbox-accordion'>
+                <div class="accordion__header">
+                  <span class="accordion__header-number">03</span>
+                  <span class="accordion__header-text">Почему у вас так дорого?</span>
+                  <span class="accordion__header-icon c-icon c-icon--dropdown-arrow"></span>
+                </div>
+                <div class="accordion__content">
+                  <p>Мы используем только оригинальные комплектующие с завода
+                    производителя ABB, Schneider, Legrand... И не заказываем на
+                    Aliexpress и других маркетпqейсаw.</p>
+                  <p>!НО можем сделать дешевле на китайскиw комплектующих IEK, EKF,
+                    TDM. </p>
+                </div>
+              </label>
+  
+              <label class="accordion">
+                <input class="accordion__checkbox" type='checkbox' name='checkbox-accordion'>
+                <div class="accordion__header">
+                  <span class="accordion__header-number">04</span>
+                  <span class="accordion__header-text">Почему у вас дешевле, чем у конкурентов?</span>
+                  <span class="accordion__header-icon c-icon c-icon--dropdown-arrow"></span>
+                </div>
+                <div class="accordion__content">
+                  <p>У нас нет штата менеджеров по продажам и комфортного офиса в Москве. Только склад и сборочный цех.
+                  </p>
+                </div>
+              </label>
+            </div>
           </div>
-          <button class="c-button">в вайбер</button>
 
+        </div>
+      </section>
+
+      <!--==================== PRE-FOOTER ====================-->
+      <section class="pre-footer">
+        <div class="container">
+          <a href="#" class="about__btn">Задать свой вопрос в Viber 
+            <img class="about__btn-icon" src="./img/icons/viber.svg"></a>
         </div>
       </section>
     </main>
 
   </div>
+
   <!--==================== FOOTER ====================-->
-
-  <!-- <footer class="l-layout__footer">
-    <div class="c-footer">
-      <div class="c-footer__inner">
-
-        <div class="c-footer__left-column">
-          <a class="footer__link" href="#">Политика конфиденциальности</a>
-          <a class="footer__link" href="#">Ⓒ Vipevo — Эвакуатор в Гродно 24 на 7. <span>Разработка и поддержка <a
-                href="#">rockncode.net</a></span></a>
-        </div>
-
-        <div class="c-footer__right-column">
-          <div class="footer__col-menu social-menu">
-            <a href="https://vc.ru/u/928996-rockncode" class="social-link footer__link" target="_blank"
-              rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15"
-                fill="none">
-                <path
-                  d="M12.8491 9.33928C12.8415 9.23491 12.8324 9.16185 12.8317 9.0888C12.8296 8.83205 12.831 8.57461 12.831 8.29421H15.1066C15.1386 10.1193 15.0684 11.9241 15.1768 13.7589H16V14.779H14.2827C14.2271 14.4561 14.1715 14.1354 14.1068 13.7589C14.0283 13.8633 13.9831 13.9183 13.9434 13.9767C13.3705 14.8304 12.5348 15.1554 11.4857 14.932C10.5846 14.74 9.93735 14.0317 9.78509 13.0583C9.75033 12.837 9.73295 12.6116 9.73156 12.3875C9.7253 11.4879 9.72878 10.5882 9.72878 9.68857C9.72878 9.59116 9.72878 9.49375 9.72878 9.3532H8.74707V8.28864C9.44928 8.25872 10.1418 8.26289 10.8655 8.28725C10.8655 8.41597 10.8655 8.51407 10.8655 8.61218C10.8655 9.81172 10.86 11.0113 10.8697 12.2108C10.8718 12.4662 10.9045 12.7271 10.9629 12.9755C11.1388 13.7234 11.7339 14.134 12.6099 13.9141C13.3733 13.7221 13.9497 12.9838 13.9712 12.16C13.9942 11.2777 13.9768 10.3941 13.9761 9.51114C13.9761 9.47844 13.9664 9.44643 13.9546 9.36572C13.593 9.35737 13.2266 9.34902 12.8491 9.34067V9.33928Z"
-                  fill="black"></path>
-                <path
-                  d="M14.7353 4.89414C15.0357 5.12445 15.3048 5.3304 15.5919 5.55097C15.3924 5.82163 15.1775 6.03732 14.9342 6.22519C13.2148 7.54858 10.2773 6.92376 9.54941 4.37926C8.85763 1.96209 10.91 -0.331236 13.3942 0.0396198C14.0811 0.142597 14.7194 0.354812 15.2665 0.797334C15.3048 0.828645 15.3409 0.862738 15.3771 0.895441V2.5208H14.3293V1.46042C14.2772 1.40476 14.264 1.3818 14.2431 1.36927C13.0042 0.644261 11.0609 0.99633 10.6674 2.95637C10.5089 3.744 10.6848 4.46832 11.2201 5.07574C12.0774 6.04915 13.5979 6.06168 14.5372 5.11679C14.6012 5.05209 14.6582 4.98111 14.7353 4.89414Z"
-                  fill="black"></path>
-                <path
-                  d="M5.97365 6.80735H4.9259C4.26332 4.96072 3.59865 3.10923 2.92703 1.23825H1.79932V0.179956H3.81765C4.3676 1.77958 4.92242 3.3952 5.47724 5.01082C5.50018 5.0136 5.52312 5.01639 5.54607 5.01917C6.10228 3.40703 6.65848 1.79558 7.21747 0.175781H9.09676V1.22851H8.05874C7.36139 3.09323 6.67169 4.93637 5.97226 6.80596L5.97365 6.80735Z"
-                  fill="black"></path>
-                <path
-                  d="M2.29704 8.29627H4.27019C4.29939 8.69983 4.3279 9.09782 4.3564 9.49582C4.37378 9.50695 4.39186 9.51878 4.40924 9.52991C5.10937 8.35611 6.18702 8.13137 7.43571 8.28862V10.2173H6.381V9.26412C6.09246 9.2175 5.8533 9.29056 5.6322 9.3998C4.92095 9.75117 4.52883 10.3509 4.48294 11.1226C4.43358 11.9526 4.47182 12.7876 4.4739 13.6211C4.4739 13.6608 4.4885 13.7012 4.5031 13.7777H7.25355C7.32446 14.1305 7.30778 14.4471 7.27093 14.7852H2.29565V13.7638H3.3309V9.26064H2.29635V8.29627H2.29704Z"
-                  fill="black"></path>
-                <path d="M1.0554 14.8217H0V13.7578H1.0554V14.8217Z" fill="black"></path>
-              </svg></a>
-            <a href="https://www.instagram.com/artem_uiux/" class="social-link footer__link" target="_blank"
-              rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                fill="none">
-                <path
-                  d="M8 0C5.82725 0 5.555 0.00925 4.7015 0.04825C3.4015 0.1075 2.2595 0.426 1.3425 1.34275C0.42625 2.25925 0.1075 3.401 0.04825 4.7015C0.00925 5.555 0 5.82725 0 8C0 10.1728 0.00925 10.445 0.04825 11.2985C0.1075 12.5985 0.426 13.7405 1.34275 14.6575C2.25925 15.574 3.40125 15.8927 4.70175 15.952C5.555 15.9907 5.82725 16 8 16C10.1728 16 10.445 15.9907 11.2985 15.9517C12.5983 15.8925 13.7405 15.574 14.6575 14.6573C15.574 13.7408 15.8927 12.5988 15.952 11.2983C15.9907 10.445 16 10.1728 16 8C16 5.82725 15.9907 5.555 15.9517 4.7015C15.8925 3.4015 15.574 2.2595 14.6573 1.3425C13.7408 0.426 12.5988 0.10725 11.2983 0.048C10.445 0.00925 10.1728 0 8 0Z"
-                  fill="#0D0E0B"></path>
-                <path
-                  d="M7.99985 3.89258C5.7311 3.89258 3.89185 5.73183 3.89185 8.00058C3.89185 10.2693 5.7311 12.1086 7.99985 12.1086C10.2686 12.1086 12.1078 10.2693 12.1078 8.00058C12.1078 5.73183 10.2686 3.89258 7.99985 3.89258ZM7.99985 10.6673C6.5271 10.6673 5.3331 9.47333 5.3331 8.00058C5.3331 6.52783 6.5271 5.33383 7.99985 5.33383C9.4726 5.33383 10.6666 6.52783 10.6666 8.00058C10.6666 9.47333 9.4726 10.6673 7.99985 10.6673Z"
-                  fill="#E4E3DB"></path>
-                <path
-                  d="M12.2703 4.68954C12.8005 4.68954 13.2303 4.25973 13.2303 3.72954C13.2303 3.19934 12.8005 2.76953 12.2703 2.76953C11.7401 2.76953 11.3103 3.19934 11.3103 3.72954C11.3103 4.25973 11.7401 4.68954 12.2703 4.68954Z"
-                  fill="#E4E3DB"></path>
-              </svg></a>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </footer> -->
-
-
   <footer class="c-footer l-layout__footer">
-    <div class="footer-content">
-        <div class="footer-content__left">
-          <div class="footer-links">
-            <a href="#">Политика конфиденциальности</a> - 
-            <a href="#">Sitemap</a>
-        </div>
-        <div class="footer-credit">
-            ©2024 VIPEVO, Все права защищены. Разработка и дизайн <a href="https://7oroof.com">Rockncode</a>
-        </div>
-        </div>
-        <div class="footer-social">
+    <div class="container">
+      <div class="footer-content">
+          <div class="footer-content__left">
+            <div class="footer-links">
+              <a href="#">Политика конфиденциальности</a>
+              <span>-</span> 
+              <a href="#">Sitemap</a>
+            </div>
+            <div class="footer-credit">
+                ©2024 VIPEVO, Все права защищены. Разработка и дизайн <a href="https://rockncode.net/">Rockncode</a>
+            </div>
+          </div>
+          <div class="footer-social">
             <a href="#" class="social-icon"><span class="c-icon c-icon--viber"></span></a>
             <a href="#" class="social-icon"><span class="c-icon c-icon--telegram"></span></a>
-            <a href="#" class="back-to-top">Back To Top <span>&#8599;</span></a>
-        </div>
+            <a href="#" class="back-to-top">Back To Top <img class="back-to-top-icon" src="./img/icons/align-top.svg"></a>
+          </div>
+      </div>
+      <div class="footer-bar"></div>
     </div>
-    <div class="footer-bar"></div>
 </footer>
 
   <!-- 
@@ -890,7 +499,7 @@
 
   <div class="popup popup--thank-you mfp-hide" id="thankyou">
     <div class="popup-content popup-content--wide">
-      <img src="/img/icons/popup-check.svg" alt="Заявка отправлена!" class="popup__svg">
+      <img src="./img/icons/popup-check.svg" alt="Заявка отправлена!" class="popup__svg">
       <h3 class="popup__title popup__title--mb15">Заявка<span class="br-mob"></span> отправлена!</h3>
       <span class="popup__subtitle">Наш менеджер свяжется с Вами в ближайшее время!</span>
     </div>

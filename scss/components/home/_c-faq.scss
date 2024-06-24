@@ -7,15 +7,41 @@
 
 // }
 
-.c-faq__inner {
-  padding: 0 80px;
-  margin: 0 auto;
+.faq {
+  padding: 30px 45px 10px;
+  background: #000;
+}
 
-    @include bp-md {
-    padding: 0 24px;
-  }
+.c-faq__inner {
+  margin: 0 auto;
+  padding: 50px 0;
+  background: #fff;
+
+  //   @include bp-md {
+  //   padding: 0 24px;
+  // }
 }
 
 .c-faq__title {
-  text-align: center;
+  display: block;
+  margin: 0;
+  // margin: 0 0 40px;
+  width: 100%;
+
+  color: #0d0d0f;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 600;
+  
+  @include bp-md {
+    font-size: 32px;
+  }
+}
+
+.c-heading__faq-img {
+  margin-left: auto;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
 }

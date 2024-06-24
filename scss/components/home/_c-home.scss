@@ -8,6 +8,7 @@
   // }
   // max-height: 1080px;
   // height: 100vh;
+  background-color: #0d0d0f;
 }
 
 .c-home__inner {
@@ -35,6 +36,7 @@
 .c-home__title {
   // max-width: 85rem;
   margin-bottom: 48px;
+  color: #fff;
   font-family: $type-family--alt;
 
   @include type-headline-1;
@@ -90,7 +92,7 @@
   gap: 16px;
   max-width: 290px;
 
-  color: $color-text;
+  color: #fff;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;

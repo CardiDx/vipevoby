@@ -10,6 +10,10 @@
 .c-heading__title {
   @include type-headline-2;
   color: $color-black;
+
+  @include bp-md {
+    font-size: 28px;
+  }
 }
 
 .c-heading__description {

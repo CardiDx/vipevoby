@@ -41,6 +41,10 @@
   }
 }
 
+.c-adv .flex-column__icon {
+  background: #000;
+}
+
 .flex-column__title {
 @include type-headline-3;
   margin: 16px 0;
