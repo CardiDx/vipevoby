@@ -29,18 +29,19 @@
   font-size: 32px;
   gap: 32px;
   // @include type-body-alt;
-  
+
   @include bp-md {
     padding: 10px;
     gap: 20px;
   }
 }
 
-.accordion__header-number{
+.accordion__header-number {
   width: 15%;
   min-width: 50px;
   font-size: 50px;
-  
+  font-weight: bold;
+
   @include bp-md {
     width: 30px;
     min-width: auto;
@@ -51,6 +52,7 @@
 .accordion__header-text {
   display: flex;
   width: 100%;
+  font-weight: 600;
 
   @include bp-md {
     padding-right: $indent-m;
@@ -68,9 +70,8 @@
   transform: rotate(-180deg);
   transition-property: transform;
   transition-duration: $motion-l;
-  
+
   @include bp-md {
-    
   }
 }
 
@@ -82,8 +83,10 @@
   padding: 0 2.4rem 2.4rem 2.4rem;
   transition-property: opacity;
   transition-duration: $motion-l;
-  @include type-body-1;
-  color: $color-text-secondary;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 150%; /* 30px */
+  color: #a4a4a4;
 
   &:first-child {
     margin-top: 0;

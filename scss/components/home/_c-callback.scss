@@ -1,4 +1,5 @@
-.callback-section {}
+.callback-section {
+}
 
 .callback {
   display: flex;
@@ -10,7 +11,7 @@
   padding: 72px 81px;
   border-radius: 16px;
   overflow: hidden;
-  
+
   @include bp-md {
     padding: 40px 20px;
   }
@@ -37,24 +38,24 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 450px;
-  padding: 15px 30px 25px;
+  max-width: 480px;
+  padding: 32px;
   text-align: center;
-  background: rgba(0, 0, 0, .7);
-  border-top: 6px solid #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
 }
 
 .callback-form__title {
-  margin: 0 0 5px;
+  margin: 0 0 16px;
 
   color: #fff;
-  font-size: 24px;
-  line-height: 1.4;
+  font-size: 36px;
+  line-height: 1.1;
   font-weight: bold;
 }
 
 .callback-form__subtitle {
-  margin: 0 0 20px;
+  margin: 0 0 32px;
   color: #fff;
   font-size: 16px;
   line-height: 1.2;
@@ -67,13 +68,13 @@
   margin: 0 0 15px;
   width: 100%;
   color: #000;
-  padding: 10px 15px;
+  padding: 10px 24px;
   text-align: left;
   background: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 99px;
   outline: none;
-  
+
   @include bp-md {
     font-size: 18px;
     padding: 3px 10px;
@@ -85,7 +86,7 @@
 
 .callback-form__notice {
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
 }
 
@@ -108,18 +109,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  margin: 20px 0 0;
+
+  margin: 24px 0 0;
   width: 100%;
-  max-width: 250px;
-  height: 40px;
+  height: 48px;
   background: #f79817;
   color: #000;
   font-size: 18px;
   line-height: 1.2;
   font-weight: bold;
-  border-radius: 5px;
-  text-transform: uppercase;
+  border-radius: 99px;
   text-decoration: none;
   outline: none;
   cursor: pointer;

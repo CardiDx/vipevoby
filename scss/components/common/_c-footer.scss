@@ -5,7 +5,7 @@
 }
 
 .c-footer {
-  border-top: 40px solid #000;
+  border-top: 2px solid #a4a4a4;
   padding: 30px 0;
   // padding: 0 80px;
   // color: $color-text;
@@ -22,7 +22,6 @@
 }
 
 .c-footer__inner {
-
 }
 
 .footer-content {
@@ -30,12 +29,11 @@
   justify-content: space-between;
 
   @include bp-md {
-  flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 }
 
 .footer-content__left {
-
 }
 
 .footer-links {
@@ -92,8 +90,8 @@
   border-radius: 99px;
   border: 1px solid #333;
   cursor: pointer;
-  
-  span{
+
+  span {
     width: 20px;
     height: 20px;
     background: #000;

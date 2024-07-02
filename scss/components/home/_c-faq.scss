@@ -9,12 +9,11 @@
 
 .faq {
   padding: 30px 45px 10px;
-  background: #000;
 }
 
 .c-faq__inner {
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 0 140px 0;
   background: #fff;
 
   //   @include bp-md {
@@ -32,7 +31,7 @@
   font-size: 52px;
   line-height: 1.2;
   font-weight: 600;
-  
+
   @include bp-md {
     font-size: 32px;
   }

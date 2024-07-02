@@ -10,7 +10,7 @@
   width: 100%;
   height: 100%;
   // background: var(--lightbox-bg-color);
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, 0.8);
   opacity: 0;
   /* Initial opacity set to 0 */
   transition: opacity 0.5s;
@@ -98,12 +98,12 @@
 
 #lightbox #close {
   text-indent: -9999px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 #lightbox #close:after,
 .close-button:before {
-  content: "" '';
+  content: '' '';
   width: 55%;
   height: 2px;
   background: #fafafa;
@@ -111,17 +111,17 @@
   top: 48%;
   left: 22%;
   transform: rotate(-45deg);
-  transition: .3s ease-out
+  transition: 0.3s ease-out;
 }
 
 #lightbox #close:after {
   transform: rotate(45deg);
-  transition: .3s ease-out
+  transition: 0.3s ease-out;
 }
 
 #lightbox #close:hover:after,
 .close-button:hover:before {
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 
 #lightbox #prev {
@@ -155,7 +155,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  
+
   @include bp-md {
     padding: 0;
     grid-template-columns: repeat(2, 1fr);
@@ -180,9 +180,15 @@
 .gallery img:hover {
   // transform: scale(1.05) translateY(-5px);
   transform: scale(1.02);
-
 }
 
+.gallery img:hover:after {
+  background: linear-gradient(
+    180deg,
+    rgba(247, 152, 23, 0.8) 0%,
+    rgba(247, 152, 23, 0) 60.58%
+  );
+}
 
 @media (max-width: 980px) {
   .gallery img:hover {
@@ -194,8 +200,8 @@
   display: block;
   margin: 0 0 60px;
   width: 100%;
-  max-width: 785px;
-  
+  max-width: 900px;
+
   color: #0d0d0f;
   font-size: 52px;
   line-height: 1.2;
