@@ -47,7 +47,7 @@
   max-width: 400px;
   // height: 60px;
   padding: 24px 40px;
-  background: #7360f2;
+  background: #5942F0;
   color: #fff;
   font-size: 18px;
   line-height: 1.2;
@@ -57,6 +57,8 @@
   outline: none;
   cursor: pointer;
   transition-duration: 0.2s;
+  border-radius: 999px;
+  height: 62px;
 }
 
 .about__btn:hover {
@@ -129,7 +131,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 10px;
-  border-radius: 16px;
+  border-radius: 8px;
   height: 100%;
 
   width: 100%;

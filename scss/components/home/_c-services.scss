@@ -264,7 +264,9 @@
 .image-box__button {
   justify-content: center;
   margin-top: auto;
-  padding-right: 48px;
+height: 62px;
+font-size: 20px;
+padding-right: 48px;  
 }
 
 .brand {
@@ -281,8 +283,7 @@
   flex-wrap: nowrap;
 }
 
-.image-tiles {
-}
+.image-tiles {}
 
 .image-tiles .row {
   gap: 20px 0;
@@ -292,7 +293,7 @@
   position: relative;
   // height: 530px;
   aspect-ratio: 4 / 3;
-  padding: 40px;
+  padding: 32px;
   border-radius: 16px;
   overflow: hidden;
 
@@ -323,15 +324,17 @@
 
 .image-tile__title {
   display: block;
-  margin: 0 0 12px;
-
+  margin: 0 0 16px;
+  color: #FFF;
   font-size: 32px;
-  line-height: 1.1;
+  font-weight: 600;
+  line-height: 110%;
 }
 
 .image-tile__price {
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1;
+  opacity: 0.9;
 }
 
 .image-tile .image-box__button {

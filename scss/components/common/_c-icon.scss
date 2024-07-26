@@ -89,6 +89,36 @@
     -webkit-mask-image: url(/img/icons/phone-line.svg);
     background-color: $color-primary;
   }
+
+
+
+  
+  &--solar_card-bold {
+    mask-image: url(/img/icons/solar_card-bold.svg);
+    -webkit-mask-image: url(/img/icons/solar_card-bold.svg);
+  }
+
+  &--solar_clock-square-bold {
+    mask-image: url(/img/icons/solar_clock-square-bold.svg);
+    -webkit-mask-image: url(/img/icons/solar_clock-square-bold.svg);
+  }
+
+  &--solar_document-bold {
+    mask-image: url(/img/icons/solar_document-bold.svg);
+    -webkit-mask-image: url(/img/icons/solar_document-bold.svg);
+  }
+
+  &--solar_shield-check-bold {
+    mask-image: url(/img/icons/solar_shield-check-bold.svg);
+    -webkit-mask-image: url(/img/icons/solar_shield-check-bold.svg);
+  }
+
+  &--solar_tag-price-bold {
+    mask-image: url(/img/icons/solar_tag-price-bold.svg);
+    -webkit-mask-image: url(/img/icons/solar_tag-price-bold.svg);
+    background-color: $color-primary;
+  }
+
 }
 
 .c-icon--rotate {
